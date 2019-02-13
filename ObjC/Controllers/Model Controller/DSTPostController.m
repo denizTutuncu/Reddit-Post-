@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  DSTPostController.m
 //  ObjC
 //
 //  Created by Deniz Tutuncu on 2/13/19.
 //  Copyright © 2019 Deniz Tutuncu. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "DSTPostController.h"
 
-@interface ViewController : UIViewController
-
+@implementation DSTPostController
 
 @end
-
