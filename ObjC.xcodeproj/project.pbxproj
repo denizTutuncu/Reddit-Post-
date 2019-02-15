@@ -8,24 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		2E280DB822149D44008F2D26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E280DB722149D44008F2D26 /* AppDelegate.m */; };
-		2E280DBB22149D44008F2D26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E280DBA22149D44008F2D26 /* ViewController.m */; };
 		2E280DBE22149D44008F2D26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E280DBC22149D44008F2D26 /* Main.storyboard */; };
 		2E280DC022149D45008F2D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E280DBF22149D45008F2D26 /* Assets.xcassets */; };
 		2E280DC322149D45008F2D26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E280DC122149D45008F2D26 /* LaunchScreen.storyboard */; };
 		2E280DC622149D45008F2D26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E280DC522149D45008F2D26 /* main.m */; };
+		2E280DD422149DC9008F2D26 /* DSTPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E280DD322149DC9008F2D26 /* DSTPost.m */; };
+		2E280DD72214A674008F2D26 /* DSTPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E280DD62214A674008F2D26 /* DSTPostController.m */; };
+		2E280DE02214B991008F2D26 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E280DDF2214B991008F2D26 /* PostListTableViewController.swift */; };
+		2E280DE22214BB0C008F2D26 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E280DE12214BB0C008F2D26 /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E280DB322149D44008F2D26 /* ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E280DB622149D44008F2D26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2E280DB722149D44008F2D26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2E280DB922149D44008F2D26 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2E280DBA22149D44008F2D26 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2E280DBD22149D44008F2D26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E280DBF22149D45008F2D26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E280DC222149D45008F2D26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E280DC422149D45008F2D26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E280DC522149D45008F2D26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E280DD222149DC9008F2D26 /* DSTPost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSTPost.h; sourceTree = "<group>"; };
+		2E280DD322149DC9008F2D26 /* DSTPost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSTPost.m; sourceTree = "<group>"; };
+		2E280DD52214A674008F2D26 /* DSTPostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSTPostController.h; sourceTree = "<group>"; };
+		2E280DD62214A674008F2D26 /* DSTPostController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSTPostController.m; sourceTree = "<group>"; };
+		2E280DDE2214B991008F2D26 /* ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		2E280DDF2214B991008F2D26 /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		2E280DE12214BB0C008F2D26 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +68,68 @@
 			children = (
 				2E280DB622149D44008F2D26 /* AppDelegate.h */,
 				2E280DB722149D44008F2D26 /* AppDelegate.m */,
-				2E280DB922149D44008F2D26 /* ViewController.h */,
-				2E280DBA22149D44008F2D26 /* ViewController.m */,
-				2E280DBC22149D44008F2D26 /* Main.storyboard */,
+				2E280DD122149DA0008F2D26 /* Controllers */,
+				2E280DCE22149D8A008F2D26 /* Model */,
+				2E280DCD22149D5F008F2D26 /* Storyboards */,
+				2E280DCC22149D51008F2D26 /* Resources */,
+			);
+			path = ObjC;
+			sourceTree = "<group>";
+		};
+		2E280DCC22149D51008F2D26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				2E280DBF22149D45008F2D26 /* Assets.xcassets */,
-				2E280DC122149D45008F2D26 /* LaunchScreen.storyboard */,
 				2E280DC422149D45008F2D26 /* Info.plist */,
 				2E280DC522149D45008F2D26 /* main.m */,
 			);
-			path = ObjC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2E280DCD22149D5F008F2D26 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2E280DBC22149D44008F2D26 /* Main.storyboard */,
+				2E280DC122149D45008F2D26 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2E280DCE22149D8A008F2D26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E280DD222149DC9008F2D26 /* DSTPost.h */,
+				2E280DD322149DC9008F2D26 /* DSTPost.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2E280DCF22149D91008F2D26 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E280DD52214A674008F2D26 /* DSTPostController.h */,
+				2E280DD62214A674008F2D26 /* DSTPostController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		2E280DD022149D98008F2D26 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E280DDE2214B991008F2D26 /* ObjC-Bridging-Header.h */,
+				2E280DDF2214B991008F2D26 /* PostListTableViewController.swift */,
+				2E280DE12214BB0C008F2D26 /* PostTableViewCell.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		2E280DD122149DA0008F2D26 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E280DD022149D98008F2D26 /* View Controller */,
+				2E280DCF22149D91008F2D26 /* Model Controller */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +163,7 @@
 				TargetAttributes = {
 					2E280DB222149D44008F2D26 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -141,9 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E280DBB22149D44008F2D26 /* ViewController.m in Sources */,
+				2E280DD422149DC9008F2D26 /* DSTPost.m in Sources */,
 				2E280DC622149D45008F2D26 /* main.m in Sources */,
 				2E280DB822149D44008F2D26 /* AppDelegate.m in Sources */,
+				2E280DE02214B991008F2D26 /* PostListTableViewController.swift in Sources */,
+				2E280DD72214A674008F2D26 /* DSTPostController.m in Sources */,
+				2E280DE22214BB0C008F2D26 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,15 +350,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DGMQB3935;
-				INFOPLIST_FILE = ObjC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.deniztutuncu.ObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjC/Controllers/View Controller/ObjC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -302,15 +371,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DGMQB3935;
-				INFOPLIST_FILE = ObjC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.deniztutuncu.ObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjC/Controllers/View Controller/ObjC-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

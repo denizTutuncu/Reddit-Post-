@@ -10,15 +10,30 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var likeCountLabel: UILabel!
+    @IBOutlet weak var upsLabel: UILabel!
+    @IBOutlet weak var thumbnailImageView: UIImageView!
+    
+    var post: DSTPost? {
+        didSet {
+            updateViews()
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    var thumbnail: UIImage? {
+        didSet {
+            updateViews()
+        }
     }
-
+    
+    func updateViews() {
+        guard let post = post else { return }
+        authorLabel.text = post.author
+        titleLabel.text = post.title
+        likeCountLabel.text = "\(post.commentsCount) 💬"
+        upsLabel.text = "\(post.ups) ♥️"
+        thumbnailImageView.image = thumbnail
+    }
 }
